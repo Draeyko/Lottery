@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background">
+
+	<TextView
+        android:id="@+id/drawDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Draw Date"
+        android:textSize="20sp"
+        android:textColor="@color/primaryText"
+        android:paddingBottom="8dp"/>
+
+	<TextView
+        android:id="@+id/numbersTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numbers"
+        android:textSize="18sp"
+        android:textColor="@color/secondaryText"
+        android:paddingBottom="8dp"/>
+
+	<TextView
+        android:id="@+id/bonusBallTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bonus Ball"
+        android:textSize="18sp"
+        android:textColor="@color/secondaryText"
+        android:paddingBottom="8dp"/>
+</LinearLayout>

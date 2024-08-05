@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background"
+    tools:context=".TicketActivity">
+
+	<TextView
+        android:id="@+id/ticketTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Lottery Ticket"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/primaryText"
+        android:paddingBottom="16dp" />
+
+	<TextView
+        android:id="@+id/ticketTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ticket"
+        android:textSize="20sp"
+        android:textColor="@color/secondaryText"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+	<Button
+        android:id="@+id/generateTicketButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate New Ticket"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white" />
+</LinearLayout>

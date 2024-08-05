@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+	<FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+		<ImageView
+            android:id="@+id/circularFrame"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circular_shape"
+            android:layout_gravity="center"/>
+
+		<ImageView
+            android:id="@+id/companyLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:scaleType="centerCrop"/>
+	</FrameLayout>
+
+	<TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lottery Draws"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/primaryText"
+        android:paddingBottom="16dp"/>
+
+	<ListView
+        android:id="@+id/drawListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+	<Button
+        android:id="@+id/ticketButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Ticket"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"/>
+</LinearLayout>
